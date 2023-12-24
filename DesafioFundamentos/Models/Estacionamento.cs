@@ -33,7 +33,7 @@ namespace DesafioFundamentos.Models
                 
                 // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
                 int horas = int.Parse(Console.ReadLine());
-                
+
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
                 // *IMPLEMENTE AQUI*
                 decimal valorTotal = (precoInicial + precoPorHora) * horas; 
@@ -57,6 +57,10 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Os veículos estacionados são:");
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
                 // *IMPLEMENTE AQUI*
+                foreach (var item in veiculos)
+                {
+                    Console.WriteLine(item);
+                }
             }
             else
             {
